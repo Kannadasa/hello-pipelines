@@ -22,7 +22,7 @@ steps:
     projects: '**/*Tests*.csproj'
 
 - task: DotNetCoreCLI@2
-  displayName: 'dotnet publish '$(buildconfiguration)'
+  displayName: 'dotnet publish '$(buildConfiguration)'
   inputs:
     command: publish
     publishWebProjects: true
